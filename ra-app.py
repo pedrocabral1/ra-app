@@ -6,8 +6,8 @@ from pathlib import Path
 
 # Verifica se os dados já foram carregados no estado da sessão
 if "data" not in st.session_state:
-    # Carrega o arquivo processado `dados_processados.csv` com separador `;`
-    df_data = pd.read_csv(r"C:\Users\User\OneDrive\Documentos\GitHub\ra-app-construção\ra_app_dataset\dados_processados.csv", sep=';')
+    # Carrega o arquivo `dados_processados.csv` utilizando caminho relativo
+    df_data = pd.read_csv("ra_app_dataset/dados_processados.csv", sep=";")
     
     # Armazena os dados no estado da sessão
     st.session_state["data"] = df_data
