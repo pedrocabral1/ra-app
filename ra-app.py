@@ -1,16 +1,6 @@
-import subprocess
-import sys
-
-# Tenta importar o `plotly`. Se falhar, instala manualmente.
-try:
-    import plotly.express as px
-except ImportError:
-    # Executa um comando para instalar o `plotly` com a versão especificada.
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly==5.24.1"])
-    import plotly.express as px
-
 # Instala o plotly manualmente se não estiver disponível
 import streamlit as st
+import sys
 import pandas as pd
 from pathlib import Path
 
