@@ -1,5 +1,5 @@
-streamlit==1.24.0        # Bibliotecas para construção e execução do Streamlit
+streamlit==1.39.0        # Bibliotecas para construção e execução do Streamlit
 pandas==2.1.1            # Biblioteca para manipulação de dados
-plotly==5.24.1           # Biblioteca para visualização de gráficos interativos
+plotly==2.2.3            # Biblioteca para visualização de gráficos interativos
 numpy==1.24.4            # Biblioteca para operações matemáticas (opcional, usada pelo pandas)
 matplotlib==3.8.0        # Biblioteca de gráficos complementar (opcional)
